@@ -2,13 +2,13 @@
 const Home = () => {
   return (
     <div className="relative h-screen bg-neutral-200 flex items-center justify-center overflow-hidden text-pretty">
-      <div className="max-w-5xl flex  flex-col mx-auto gap-4  selection:bg-amber-900/70 selection:text-neutral-950">
-        <h1 className="text-neutral-900 text-5xl  font-medium font-display text-center">
+      <div className="p-8 md:p-0 md:max-w-5xl flex  flex-col mx-auto gap-4  selection:bg-amber-900/70 selection:text-neutral-950">
+        <h1 className="text-neutral-900 text-3xl md:text-5xl  font-medium font-display text-center">
           Discover The Magic of The Himalayas
         </h1>
-        <p className="text-neutral-600 text-center font-display italic leading-[105%] text-md ">
+        <p className="text-neutral-600 text-center  font-display italic leading-[120%] text-md ">
           Trek breathtaking mountain trails, explore ancient cultures, and
-          experience <br /> unforgettable adventures with{" "}
+          experience <br className="hidden md:inline" /> unforgettable adventures with{" "}
           <span className="italic font-display underline underline-offset-5  text-orange-700">
             Nepal Ali Baba Treks & Tours.
           </span>
