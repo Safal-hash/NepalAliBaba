@@ -34,11 +34,11 @@ const Home = () => {
 
 
 
-      <div className="relative h-screen  bg-neutral-100 flex justify-around items-center gap-4 px-10 text-pretty">
+      <div className="relative h-screen  bg-neutral-100 flex flex-col md:flex-row md:justify-around items-center gap-4 md:gap-4 px-10 text-pretty">
         <p className="font-display absolute left-10 top-1 text-4xl  text-gray-400">
           Where we're travelling in <br /> <span className="font-display text-neutral-950">Kathmandu</span>
         </p>
-        <div className="mt-15    gap-2 w-md md:h-4/5 flex flex-col ">
+        <div className=" mt-38 md:mt-15 flex-1 md:flex-none gap-2 h-1/2 w-3/4 md:w-md md:h-4/5 flex flex-col ">
           <img src="./boudha.avif" alt="" className="object-cover h-[90%]" />
           <div className="flex flex-col justify-around">
             <p className="font-display leading-2">
@@ -50,8 +50,8 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nihil laborum mollitia adipisci dolor minima rem vel consectetur minus. Id unde sapiente asperiores aut dicta quis dolores, quae at nobis ipsum commodi incidunt quas neque placeat adipisci blanditiis doloribus maxime veniam nostrum est tempora in exercitationem reprehenderit. Corrupti asperiores minima laudantium veniam? Dolore ratione quas numquam eveniet quaerat, incidunt eligendi!
+        <div className="flex-1 mt-3 md:flex-none max-w-lg text-xs md:text-sm font-display">
+          The Boudhanath Stupa is one of the largest and most sacred Buddhist stupas in the world. Its massive white dome and all-seeing eyes create a serene atmosphere that draws travelers and pilgrims alike. Surrounded by monasteries, prayer wheels, and vibrant markets, it offers a deeply spiritual and culturally rich experience in the heart of Kathmandu.
         </div>
       </div>
     </div>
