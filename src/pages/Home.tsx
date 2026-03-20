@@ -1,25 +1,57 @@
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="relative h-screen bg-neutral-200 flex items-center justify-center overflow-hidden text-pretty">
-      <div className="p-8 md:p-0 md:max-w-5xl flex  flex-col mx-auto gap-4  selection:bg-amber-900/70 selection:text-neutral-950">
-        <h1 className="text-neutral-900 text-3xl md:text-5xl  font-medium font-display text-center">
-          Discover The Magic of The Himalayas
-        </h1>
-        <p className="text-neutral-600 text-center  font-display italic leading-[120%] text-md ">
-          Trek breathtaking mountain trails, explore ancient cultures, and
-          experience <br className="hidden md:inline" /> unforgettable adventures with{" "}
-          <span className="italic font-display underline underline-offset-5  text-orange-700">
-            Nepal Ali Baba Treks & Tours.
-          </span>
+    <div className="relative h-screen bg-blue-800 ">
+      <Navbar />
+      <div className="flex h-screen relative items-center bg-white  justify-center  overflow-hidden text-pretty">
+        <div className="p-8 relative md:p-0 md:max-w-5xl flex  flex-col mx-auto gap-2 md:gap-4  selection:bg-gray-500 selection:text-neutral-950">
+          <h1 className="text-neutral-900 text-3xl md:text-5xl  font-medium font-display text-center">
+            Discover The Magic of The Himalayas
+          </h1>
+          <p className="text-neutral-600 text-center  font-display italic leading-[130%] text-sm md:text-base ">
+            Trek breathtaking mountain trails, explore ancient cultures, and
+            experience <br className="hidden md:inline" /> unforgettable
+            adventures with{" "}
+            <span className="italic font-display underline underline-offset-5  text-orange-700">
+              Nepal Ali Baba Treks & Tours.
+            </span>
+          </p>
+          <div className="flex gap-2 justify-center mt-8 md:mt-4">
+            <button className="px-4 gap-1.5 py-2 rounded-full min-w-35 hover:bg-neutral-800 hover:shadow-md hover:shadow-orange-600 transition duration-300 cursor-pointer border border-neutral-600 bg-neutral-900 text-neutral-100 flex items-center justify-center font-geist text-sm text-shadow-2xs shadow-sm shadow-orange-500 ">
+              Book Your Trek {TrekSvg}
+            </button>
+            <button className="px-4 gap-1.5  flex justify-center items-center py-2 rounded-full min-w-35 bg-white text-neutral-900 border text-shadow-2xs border-neutral-300 shadow-xs font-geist cursor-pointer hover:bg-neutral-200 transition duration-300 shadow-black  text-sm">
+              Contact Us {ContactSvg}
+            </button>
+          </div>
+        </div>
+        <div className="h-screen absolute inset-y-0 2xl:left-25 left-5 w-[0.5px] bg-neutral-500" />
+        <div className="h-screen absolute inset-y-0 2xl:right-25 right-5 w-[0.5px] bg-neutral-500" />
+        <div className="w-full h-px absolute inset-x-0 bottom-0 bg-neutral-500" />
+      </div>
+
+
+
+
+      <div className="relative h-screen  bg-neutral-100 flex justify-around items-center gap-4 px-10 text-pretty">
+        <p className="font-display absolute left-10 top-1 text-4xl  text-gray-400">
+          Where we're travelling in <br /> <span className="font-display text-neutral-950">Kathmandu</span>
         </p>
-        <div className="flex gap-2 justify-center mt-4">
-          <button className="px-4 gap-1.5 py-2 rounded-full min-w-35 hover:bg-neutral-800 hover:shadow-md hover:shadow-orange-600 transition duration-300 cursor-pointer border border-neutral-600 bg-neutral-900 text-neutral-100 flex items-center justify-center font-geist text-sm text-shadow-2xs shadow-sm shadow-orange-500 ">
-            Book Your Trek {TrekSvg}
-          </button>
-          <button className="px-4 gap-1.5  flex justify-center items-center py-2 rounded-full min-w-35 bg-neutral-100 text-neutral-900 border text-shadow-2xs border-neutral-300 shadow-xs font-geist cursor-pointer hover:bg-neutral-200 transition duration-300 shadow-black  text-sm">
-            Contact Us {ContactSvg}
-          </button>
+        <div className="mt-15    gap-2 w-md md:h-4/5 flex flex-col ">
+          <img src="./boudha.avif" alt="" className="object-cover h-[90%]" />
+          <div className="flex flex-col justify-around">
+            <p className="font-display leading-2">
+              Boudha Stupa{" "}
+              <span className="text-xs text-gray-600 font-geist">
+                <br />
+                Kathmandu, Nepal
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="max-w-lg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nihil laborum mollitia adipisci dolor minima rem vel consectetur minus. Id unde sapiente asperiores aut dicta quis dolores, quae at nobis ipsum commodi incidunt quas neque placeat adipisci blanditiis doloribus maxime veniam nostrum est tempora in exercitationem reprehenderit. Corrupti asperiores minima laudantium veniam? Dolore ratione quas numquam eveniet quaerat, incidunt eligendi!
         </div>
       </div>
     </div>
